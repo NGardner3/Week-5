@@ -20,7 +20,8 @@ public class SalesVsSales {
 
         //create new object to compute compensation and  find the highest earner
         CompCalculation a = new CompCalculation();
-
+        a.askUser();
+/*
         // ask user enter number of salespersons
         System.out.print("How many salespersons do you want to compare: ");
         int SIZE = input.nextInt();
@@ -54,7 +55,7 @@ public class SalesVsSales {
         // display the highest earner
         System.out.println("\nThe highest earner is: \n" + name[highest] +
                            " with total sales: $" + sale[highest] +
-                           " and total compensation: $" + a.calculation(sale[highest]));
+                           " and total compensation: $" + a.calculation());
 
          
 
@@ -77,5 +78,6 @@ public class SalesVsSales {
 
     }
 
-
+*/
+    }
 }
