@@ -1,11 +1,9 @@
 package salesvssales;
 
 
-//package highestearner;
-
 /**
  *
- * @author DerekC
+ * @author DerekC NicoleG
  */
 
 import java.util.Scanner;

@@ -116,19 +116,6 @@ public class CompCalculation {
     }
 
 
-   // method to find the highest earner
-    // take array of compensation and its size as parameter
-    public int highest_earner(double[] compensation_array, int size) {
-        int index = 0; // index of highest earner in array
-        double max = 0;
-        // loop all array and find highest earner
-        for (int i = 0; i < size; i++) {
-            if (compensation_array[i] > max) {
-                max = compensation_array[i];
-                index = i;
-            }
-        }
-        return index;
     }
 
-}
+
