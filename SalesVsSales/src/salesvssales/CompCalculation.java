@@ -96,10 +96,10 @@ public class CompCalculation {
         double fixed_salary = 30000, //fixed salary of $30,000.00 per year
                 sales_target = 400000, //sales target is $400,000.00 per year
                 incentive_rate = 0.8, // sales incentive start when 80% of the sales target is met
-                commission_rate = 0.08, //current commission is 8% of total sales
+                commission_rate = .08, //current commission is 8% of total sales
                 bonus = 1.25, //acceleration factor is 1.25
                 minimumSales = 320000d,
-                compensation = 0; //Total compensation
+                compensation = 0d; //Total compensation
           //double total_sales = 0;
            
 
@@ -108,7 +108,7 @@ public class CompCalculation {
         if (total_sales < (sales_target * incentive_rate)) {
             compensation = fixed_salary;
         } //If total sales meet 80% of the sales target to 399,999.99,
-        else if (total_sales > minimumSales && total_sales < sales_target) {
+        else if (total_sales >= minimumSales && total_sales < sales_target) {
             compensation = fixed_salary + (total_sales * commission_rate);
         } //If total sales exceed the sales target
         else if (total_sales > sales_target) {
